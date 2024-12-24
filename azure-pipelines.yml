@@ -15,3 +15,8 @@ steps:
     azureSubscription: 'unmanaged'
     command: 'build'
     projects: 'calculator.sln'
+- task: DotNetCoreCLI@2
+  inputs:
+    azureSubscription: 'unmanaged'
+    command: 'publish'
+    publishWebProjects: true
