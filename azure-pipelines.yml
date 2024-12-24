@@ -15,4 +15,3 @@ steps:
     azureSubscription: 'unmanaged'
     command: 'build'
     projects: 'calculator.sln'
-    arguments: 'Release'
