@@ -20,3 +20,10 @@ steps:
     azureSubscription: 'unmanaged'
     command: 'publish'
     publishWebProjects: true
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'unmanaged'
+    appType: 'webApp'
+    appName: 'ado-dotnet-webapp'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
