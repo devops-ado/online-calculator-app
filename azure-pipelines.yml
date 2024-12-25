@@ -27,6 +27,6 @@ steps:
     appName: 'ado-dotnet-webapp'
     deployToSlotOrASE: true
     resourceGroupName: 'ado-webapp-dotnet-rg'
-    slotName: 'dev1'
+    slotName: 'demo'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
