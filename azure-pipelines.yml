@@ -25,5 +25,8 @@ steps:
     azureSubscription: 'unmanaged'
     appType: 'webApp'
     appName: 'ado-dotnet-webapp'
+    deployToSlotOrASE: true
+    resourceGroupName: 'ado-webapp-dotnet-rg'
+    slotName: 'dev1'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
